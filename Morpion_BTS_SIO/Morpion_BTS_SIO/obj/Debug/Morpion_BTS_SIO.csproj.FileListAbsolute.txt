@@ -1,0 +1,6 @@
+C:\Users\aless\OneDrive\Documents\Travail\BTS SIO 1ère année\Atelier de professionnalisation\Ap 2 Morpion\Morpion_BTS\MorpionBTS_SIO\Morpion_BTS_SIO\Morpion_BTS_SIO\bin\Debug\Morpion_BTS_SIO.exe.config
+C:\Users\aless\OneDrive\Documents\Travail\BTS SIO 1ère année\Atelier de professionnalisation\Ap 2 Morpion\Morpion_BTS\MorpionBTS_SIO\Morpion_BTS_SIO\Morpion_BTS_SIO\bin\Debug\Morpion_BTS_SIO.exe
+C:\Users\aless\OneDrive\Documents\Travail\BTS SIO 1ère année\Atelier de professionnalisation\Ap 2 Morpion\Morpion_BTS\MorpionBTS_SIO\Morpion_BTS_SIO\Morpion_BTS_SIO\bin\Debug\Morpion_BTS_SIO.pdb
+C:\Users\aless\OneDrive\Documents\Travail\BTS SIO 1ère année\Atelier de professionnalisation\Ap 2 Morpion\Morpion_BTS\MorpionBTS_SIO\Morpion_BTS_SIO\Morpion_BTS_SIO\obj\Debug\Morpion_BTS_SIO.csprojResolveAssemblyReference.cache
+C:\Users\aless\OneDrive\Documents\Travail\BTS SIO 1ère année\Atelier de professionnalisation\Ap 2 Morpion\Morpion_BTS\MorpionBTS_SIO\Morpion_BTS_SIO\Morpion_BTS_SIO\obj\Debug\Morpion_BTS_SIO.exe
+C:\Users\aless\OneDrive\Documents\Travail\BTS SIO 1ère année\Atelier de professionnalisation\Ap 2 Morpion\Morpion_BTS\MorpionBTS_SIO\Morpion_BTS_SIO\Morpion_BTS_SIO\obj\Debug\Morpion_BTS_SIO.pdb
