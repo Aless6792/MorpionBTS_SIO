@@ -11,11 +11,12 @@ namespace Morpion
         // Fonction permettant l'affichage du Morpion
         public static void AfficherMorpion(int j, int k)
         {
-            // A compléter 
+            
+        	// A compléter
         }
 
         // Fonction permettant de changer
-        // dans le tableau qu'elle est le 
+        // dans le tableau quel est le 
         // joueur qui à jouer
         // Bien vérifier que le joueur ne sort
         // pas du tableau et que la position
