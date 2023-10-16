@@ -11,12 +11,14 @@ namespace Morpion
         // Fonction permettant l'affichage du Morpion
         public static void AfficherMorpion(int j, int k)
         {
+            int [,] grilleInt = new int[3, 3];
+            string[,] grilleString = { { "1", "2", "3" }, { "4", "5", "6" }, { "7", "8", "9" } };
             
         	// A compléter
         }
 
         // Fonction permettant de changer
-        // dans le tableau quel est le 
+        // dans le tableau quelgit  est le 
         // joueur qui à jouer
         // Bien vérifier que le joueur ne sort
         // pas du tableau et que la position
