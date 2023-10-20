@@ -11,10 +11,20 @@ namespace Morpion
         // Fonction permettant l'affichage du Morpion
         public static void AfficherMorpion(int j, int k)
         {
-            int [,] grilleInt = new int[3, 3];
-            string[,] grilleString = { { "1", "2", "3" }, { "4", "5", "6" }, { "7", "8", "9" } };
-            
         	// A compléter
+        
+	        for (j = 0; j < grille.GetLength(0); j++)
+	        {
+	           Console.Write("\n|====|====|====|\n");
+	           Console.Write("|");
+	           for (k = 0; k < grille.GetLength(1); k++)
+	           {
+	           		Console.Write(" -- ");
+	           		Console.Write("|");
+	           }
+	                
+	        }
+	    Console.Write("\n|====|====|====|\n");
         }
 
         // Fonction permettant de changer
@@ -25,7 +35,11 @@ namespace Morpion
         // n'est pas déjà jouée
         public static bool AJouer(int j, int k, int joueur)
         {
-            // A compléter 
+        	while (joueur == 1){
+        		if 
+        	}
+        	
+        	// A compléter
             return false;
         }
 
@@ -60,6 +74,7 @@ namespace Morpion
             {
 
                 // A compléter 
+                AfficherMorpion(j,k);
                 try
                 {
                     Console.WriteLine("Ligne   =    ");
@@ -87,7 +102,7 @@ namespace Morpion
             // Fin de la partie
             // A compléter 
 
-            Console.ReadKey();
-    }
-  }
+            Console.ReadKey(true);
+        }
+	}
 }
