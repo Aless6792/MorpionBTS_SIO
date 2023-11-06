@@ -35,10 +35,15 @@ namespace Morpion
         // n'est pas déjà jouée
         public static bool AJouer(int j, int k, int joueur)
         {
-        	while (joueur == 1){
-        		if 
-        	}
         	
+        	if (j <= 2 && j >= 0 && k <= 2 && k >= 0)
+        	{
+        		if (grille[j,k] == 10)
+        		{
+        			return true;
+        		}
+        		return false;
+        	}
         	// A compléter
             return false;
         }
@@ -77,6 +82,7 @@ namespace Morpion
                 AfficherMorpion(j,k);
                 try
                 {
+                	Console.WriteLine("C'est au tour du joueur : ");
                     Console.WriteLine("Ligne   =    ");
                     Console.WriteLine("Colonne =    ");
                     // Peut changer en fonction de comment vous avez fait votre tableau.
@@ -85,7 +91,7 @@ namespace Morpion
                     // Peut changer en fonction de comment vous avez fait votre tableau.
                     Console.SetCursorPosition(LigneDébut + 10, ColonneDébut + 10); // Permet de manipuler le curseur dans la fenêtre 
                     c = int.Parse(Console.ReadLine()) - 1;
-
+                    
                     // A compléter 
 
                 }
@@ -96,6 +102,7 @@ namespace Morpion
 
                 // Changement de joueur
                 // A compléter 
+                Console.Clear();
 
             }; // Fin TQ
 
