@@ -15,16 +15,30 @@ namespace Morpion
         
 	        for (j = 0; j < grille.GetLength(0); j++)
 	        {
-	           Console.Write("\n|====|====|====|\n");
+	           Console.Write("\n|===|===|===|\n");
 	           Console.Write("|");
 	           for (k = 0; k < grille.GetLength(1); k++)
 	           {
-	           		Console.Write(" -- ");
-	           		Console.Write("|");
+	           		if (grille[j,k]==1)
+	           		{
+	           			Console.Write(" O ");
+	           		}
+	           		
+	           		if (grille[j,k]==2)
+	           		{
+	           			Console.Write(" X ");
+	           		}
+	           	
+		           	if (grille[j,k] == 10)
+		           	{
+		           		Console.Write(" - ");
+		           	}
+		           
+		       Console.Write("|");
 	           }
 	                
 	        }
-	    Console.Write("\n|====|====|====|\n");
+	    Console.Write("\n|===|===|===|\n");
         }
 
         // Fonction permettant de changer
@@ -40,6 +54,8 @@ namespace Morpion
         	{
         		if (grille[j,k] == 10)
         		{
+        			grille[j,k] = joueur;
+        			        			
         			return true;
         		}
         		return false;
@@ -52,11 +68,50 @@ namespace Morpion
         // si un joueur à gagner
         public static bool Gagner(int l, int c, int joueur)
         {
+        	if (grille[0.0]+grille[1.1]+grille[2.2])
+        	{
+        		return true;
+        	}
+        	
+        	if (grille[2.0]+grille[1.1]+grille[0.2])
+        	{
+        		return true;
+        	}
+        	
+        	if (grille[0.0]+grille[0.1]+grille[0.2])
+        	{
+        		return true;
+        	}
+        	
+        	if (grille[1.0]+grille[1.1]+grille[1.2])
+        	{
+        		return true;
+        	}
+        	
+        	if (grille[2.0]+grille[2.1]+grille[2.2])
+        	{
+        		return true;
+        	}
+        	
+        	if (grille[0.0]+grille[1.0]+grille[2.0])
+        	{
+        		return true;
+        	}
+        	
+        	if (grille[0.1]+grille[1.1]+grille[2.1])
+        	{
+        		return true;
+        	}
+        	
+        	if (grille[0.2]+grille[1.2]+grille[2.2])
+        	{
+        		return true;
+        	}
             // A compléter 
             return false;
         }
 
-        // Programme principal
+        // Programme principal3
         static void Main(string[] args)
         {
             //--- Déclarations et initialisations --
@@ -82,7 +137,7 @@ namespace Morpion
                 AfficherMorpion(j,k);
                 try
                 {
-                	Console.WriteLine("C'est au tour du joueur : ");
+                	Console.WriteLine("C'est au tour du joueur : " + joueur);
                     Console.WriteLine("Ligne   =    ");
                     Console.WriteLine("Colonne =    ");
                     // Peut changer en fonction de comment vous avez fait votre tableau.
@@ -92,7 +147,21 @@ namespace Morpion
                     Console.SetCursorPosition(LigneDébut + 10, ColonneDébut + 10); // Permet de manipuler le curseur dans la fenêtre 
                     c = int.Parse(Console.ReadLine()) - 1;
                     
-                    // A compléter 
+                    bonnePosition = AJouer(l,c,joueur);
+       
+                    // A compléter
+                    if (bonnePosition)
+                    {
+                    	if (joueur == 1)
+                    	{
+                    		joueur = 2;
+	                    }
+	                    else 
+	                    {
+                    		joueur = 1;
+                   		}
+                    }
+                    
 
                 }
                 catch (Exception e)
