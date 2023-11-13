@@ -68,45 +68,6 @@ namespace Morpion
         // si un joueur à gagner
         public static bool Gagner(int l, int c, int joueur)
         {
-        	if (grille[0.0]+grille[1.1]+grille[2.2])
-        	{
-        		return true;
-        	}
-        	
-        	if (grille[2.0]+grille[1.1]+grille[0.2])
-        	{
-        		return true;
-        	}
-        	
-        	if (grille[0.0]+grille[0.1]+grille[0.2])
-        	{
-        		return true;
-        	}
-        	
-        	if (grille[1.0]+grille[1.1]+grille[1.2])
-        	{
-        		return true;
-        	}
-        	
-        	if (grille[2.0]+grille[2.1]+grille[2.2])
-        	{
-        		return true;
-        	}
-        	
-        	if (grille[0.0]+grille[1.0]+grille[2.0])
-        	{
-        		return true;
-        	}
-        	
-        	if (grille[0.1]+grille[1.1]+grille[2.1])
-        	{
-        		return true;
-        	}
-        	
-        	if (grille[0.2]+grille[1.2]+grille[2.2])
-        	{
-        		return true;
-        	}
             // A compléter 
             return false;
         }
